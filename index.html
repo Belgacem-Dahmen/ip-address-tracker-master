@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title"> IP Address Tracker</h1>
+    <div class="header__cta">
+      <input class="header__cta-input" type="text" placeholder="Search for any IP address or domain">
+      <button class="header__cta-button"><img class="header__cta__button-icon" src="/images/icon-arrow.svg"
+          alt=""></button>
+    </div>
+    <div class="infos">
+      <div class="infos__ip">
+        <p class="info__title">IP adress</p>
+        <p class="info__value">192.212.174.101</p>
+      </div>
+      <div class="infos__location">
+        <p class="info__title">location</p>
+        <p class="info__value">Brooklyn NY</p>
+      </div>
+      <div class="infos__timezone">
+        <p class="info__title">timezone</p>
+        <p class="info__value">UTC -05:00</p>
+      </div>
+      <div class="infos__isp">
+        <p class="info__title">isp</p>
+        <p class="info__value">Space X Starlink</p>
+      </div>
+
+    </div>
+  </header>
+
+
+  <div class="map-container">
+    <div id="map">
+
+    </div>
+  </div>
+
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
