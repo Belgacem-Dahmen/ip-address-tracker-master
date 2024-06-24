@@ -58,9 +58,9 @@ getPosition(url)
 
 
 
-        console.log({
-            ip, data_location, timezone, lng, lat
-        });
+        // console.log({
+        //     ip, data_location, timezone, lng, lat
+        // });
         let map = L.map('map').setView([lat, lng], 13);
         L.tileLayer(`https://tile.openstreetmap.org/{z}/{x}/{y}.png`, {
             maxZoom: 19,
