@@ -166,6 +166,18 @@ select {
     z-index: 3;
 }
 
+.info__title{
+    color: var(--dark-gray);
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: 2px;
+    font-weight: var(--font-weight-bold);
+
+}
+.info__value {
+    font-weight: var(--font-weight-bold);
+    font-size: 1.25rem;
+}
 
 
 
@@ -181,7 +193,7 @@ select {
     }
 
     .header__cta {
-        max-width: 35%;
+        min-width: 35%;
         align-self: center;
     }
 
